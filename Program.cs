@@ -16,19 +16,20 @@ namespace ByteBank
             GerenciadorBonificacao gerenciador = new GerenciadorBonificacao();
 
 
-            Funcionario carlos = new Funcionario();
-
+            Funcionario carlos = new Funcionario("345.554.3332-44");
             carlos.Nome = "Carlos";
-            carlos.CPF = "345.554.3332-44";
             carlos.Salario = 2000;
+
+
+            Console.WriteLine(Funcionario.TotalDeFuncionarios);
 
             gerenciador.Registrar(carlos);
 
-            Diretor roberta = new Diretor(); // instancia do objeto
-
+            Diretor roberta = new Diretor("345.678.943-32"); // instancia do objeto
             roberta.Nome = "Roberta";
-            roberta.CPF = "345.678.943-32";
             roberta.Salario = 5000;
+
+            Console.WriteLine(Funcionario.TotalDeFuncionarios);
 
             Funcionario robertaTeste = roberta;
 
