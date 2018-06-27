@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace ByteBank.Funcionarios
 {
-    public abstract class Funcionario
+    public abstract class Funcionario  // criando uma classe abstrata
     {
         public static int TotalDeFuncionarios { get; private set; }
 
         public string Nome { get; set; }
         public string CPF { get; private  set; }
         public double Salario { get; protected set; }
+        
+
 
         public Funcionario(double salario ,string cpf)
         {
@@ -25,7 +27,9 @@ namespace ByteBank.Funcionarios
         }
 
 
-        public abstract void AumentarSalario();
+        
+
+        public abstract void AumentarSalario(); //  criando um metodo abstrato
 
 
         public abstract double GetBonificacao();
